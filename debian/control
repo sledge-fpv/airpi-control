@@ -1,0 +1,14 @@
+Source: airpi-control
+Section: web
+Priority: extra
+Maintainer: hornetwl <hornetwlfpv@gmail.com>
+Homepage: http://www.swat-drones.de
+Vcs-Browser: https://github.com/sledge-fpv/airpi-control
+Vcs-Git: git://github.com/sledge-fpv/airpi-control
+Standards-Version: 3.9.5
+
+Package: airpi-control
+Architecture: all
+Depends: nginx, php5-fpm, gst-rpicamsrc (>=0.0.1), python-pip
+Description: Web application for AirPi control
+
