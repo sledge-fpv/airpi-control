@@ -1,0 +1,1 @@
+/home/pi/gst-rtsp-server-1.4.1/examples/test-launch "(rpicamsrc bitrate=6500000 hflip=true vflip=true preview=false ! video/x-h264,width=1280,height=720,framerate=49/1,profile=high ! h264parse ! rtph264pay name=pay0 pt=96 )"

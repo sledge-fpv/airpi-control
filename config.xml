@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config>
+
+<rtsp_state>0</rtsp_state>
+<rtsp_path>/home/pi/gst-server-1.4.1/examples/</rtsp_path>
+<rtsp_pipe_active>rtsp_pipe_2</rtsp_pipe_active>
+<rtsp_pipe_1>test-launch "(rpicamsrc bitrate=6500000 hflip=true vflip=true preview=false ! video/x-h264,width=1280,height=720,framerate=49/1,profile=high ! h264parse ! rtph264pay name=pay0 pt=96 )"</rtsp_pipe_1>
+<rtsp_pipe_2>test-launch "(rpicamsrc bitrate=5500000 hflip=true vflip=true preview=false ! video/x-h264,width=1280,height=720,framerate=49/1,profile=high ! h264parse ! rtph264pay name=pay0 pt=96 )"</rtsp_pipe_2>
+<rtsp_pipe_3>test-launch "(rpicamsrc bitrate=4500000 hflip=true vflip=true preview=false ! video/x-h264,width=1280,height=720,framerate=49/1,profile=high ! h264parse ! rtph264pay name=pay0 pt=96 )"</rtsp_pipe_3>
+<rtsp_pipe_4/>
+<rtsp_pipe_5/>
+
+<udp_state>0</udp_state>
+<udp_pipe_active>udp_pipe_2</udp_pipe_active>
+<udp_pipe_1>raspivid -n -w 1280 -h 720 -b 6500000 -fps 49 -vf -hf -t 0 -pf high -o - | gst-launch-1.0 -v fdsrc ! h264parse ! rtph264pay ! udpsink host=192.168.178.105 port=9000</udp_pipe_1>
+<udp_pipe_2>raspivid -n -w 1280 -h 720 -b 5500000 -fps 49 -vf -hf -t 0 -pf high -o - | gst-launch-1.0 -v fdsrc ! h264parse ! rtph264pay ! udpsink host=192.168.178.105 port=9000</udp_pipe_2>
+<udp_pipe_3>raspivid -n -w 1280 -h 720 -b 4500000 -fps 49 -vf -hf -t 0 -pf high -o - | gst-launch-1.0 -v fdsrc ! h264parse ! rtph264pay ! udpsink host=192.168.178.105 port=9000</udp_pipe_3>
+<udp_pipe_4/>
+<udp_pipe_5/>
+
+</Config>

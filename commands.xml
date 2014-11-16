@@ -1,0 +1,1 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?><commands><command><type>action</type><entity>rtsp_stop</entity><param>nix</param></command><command><type>action</type><entity>udp_stop</entity><param>nix</param></command><command><type>action</type><entity>rtsp_start</entity><param>nix</param></command></commands>
