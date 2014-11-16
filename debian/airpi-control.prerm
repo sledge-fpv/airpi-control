@@ -1,0 +1,8 @@
+#!/bin/sh
+
+set -e
+
+rm -f /etc/nginx/sites-enabled/airpi-control
+
+/usr/sbin/nginx -s reload
+
