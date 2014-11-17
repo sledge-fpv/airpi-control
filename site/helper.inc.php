@@ -2,7 +2,7 @@
 function runCommand($command, $answer_required = FALSE)
 {
 	if(!$answer_required)
-		$command = $command." > /dev/null &";
+		$command = $command." > /tmp/php-out.log 2>/tmp/php-err.log &";
 	return exec($command, $ret);
 }
 
