@@ -7,4 +7,5 @@ ln -s /etc/nginx/sites-available/nginx-airpi-control /etc/nginx/sites-enabled/ng
 adduser www-data video
 chown www-data.www-data /usr/share/airpi-control/site/config.xml
 
+pip install --upgrade droneapi pymavlink MAVProxy
 
