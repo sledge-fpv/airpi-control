@@ -1,0 +1,4 @@
+site/*			usr/share/airpi-control/site
+tools/*			usr/bin
+conf/*			etc/nginx/sites-available
+
