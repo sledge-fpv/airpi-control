@@ -1,8 +1,10 @@
 #!/bin/sh
-
 set -e
 
-ln -s /etc/nginx/sites-available/airpi-control /etc/nginx/sites-enabled/airpi-control
-
+ln -s /etc/nginx/sites-available/nginx-airpi-control /etc/nginx/sites-enabled/nginx-airpi-control
 /usr/sbin/nginx -s reload
+
+adduser www-data video
+chown www-data.www-data /usr/share/airpi-control/site/config.xml
+
 

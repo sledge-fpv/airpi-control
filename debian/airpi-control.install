@@ -1,4 +1,5 @@
 site/*			usr/share/airpi-control/site
 tools/*			usr/bin
-conf/*			etc/nginx/sites-available
+conf/nginx-*		etc/nginx/sites-available
+conf/sudo-*		etc/sudoers.d
 
