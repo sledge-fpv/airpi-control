@@ -1,8 +1,8 @@
 #!/bin/sh
-
 set -e
 
-rm -f /etc/nginx/sites-enabled/airpi-control
-
+ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+rm -f /etc/nginx/sites-enabled/nginx-airpi-control
 /usr/sbin/nginx -s reload
 
+deluser www-data video
