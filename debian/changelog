@@ -1,16 +1,16 @@
-airpi-control (0.2.2) UNRELEASED; urgency=medium
+airpi-control (0.2.0-4) UNRELEASED; urgency=medium
 
-  * fixed dependencies 
+  * fixed nginx configuration to listen on all IPs and to replace the default site
 
- -- Holger Steinhaus <hsteinhaus@gmx.de>  Mon, 17 Nov 2014 22:01:25 +0000
+ -- Holger Steinhaus <hsteinhaus@gmx.de>  Tue, 18 Nov 2014 19:03:58 +0000
 
-airpi-control (0.2.1) unstable; urgency=medium
+airpi-control (0.2.0-1) unstable; urgency=medium
 
   * Python modules installed during package installation 
 
  -- Holger Steinhaus <hsteinhaus@gmx.de>  Mon, 17 Nov 2014 20:25:11 +0000
 
-airpi-control (0.2.0) unstable; urgency=medium
+airpi-control (0.2.0-0) unstable; urgency=medium
 
   * Initial release.
 

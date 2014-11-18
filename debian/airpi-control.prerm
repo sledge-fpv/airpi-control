@@ -1,6 +1,7 @@
 #!/bin/sh
 set -e
 
+ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
 rm -f /etc/nginx/sites-enabled/nginx-airpi-control
 /usr/sbin/nginx -s reload
 

@@ -2,6 +2,7 @@
 set -e
 
 ln -s /etc/nginx/sites-available/nginx-airpi-control /etc/nginx/sites-enabled/nginx-airpi-control
+rm -f /etc/nginx/sites-enabled/default
 /usr/sbin/nginx -s reload
 
 adduser www-data video
