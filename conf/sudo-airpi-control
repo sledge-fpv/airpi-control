@@ -1,10 +1,2 @@
 www-data ALL=NOPASSWD: /sbin/shutdown
 www-data ALL=NOPASSWD: /sbin/reboot
-
-# not really necessary - user www-data may access to raspivid without sudo
-# subject to be removed after PHP scripts have been fixed
-www-data ALL=NOPASSWD: /bin/kill
-www-data ALL=NOPASSWD: /usr/bin/test-launch
-www-data ALL=NOPASSWD: /usr/bin/gst-launch-1.0
-www-data ALL=NOPASSWD: /usr/bin/raspivid
-

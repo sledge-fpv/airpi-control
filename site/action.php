@@ -8,7 +8,7 @@ switch ($action)
 {
 	case 'udp_start' :
 		$ap = $config->xml->udp_pipe_active;
-		shellCmd("sudo ".$config->xml->$ap,false);
+		shellCmd($config->xml->$ap,false);
 		sleep(8);
 		$config->GetPids();
 		$show_default = true;
@@ -16,7 +16,7 @@ switch ($action)
 	case 'udp_stop' :
 		if($do)
 		{
-			$command="sudo kill -9 $(ps aux | grep raspivid | grep -v grep | awk '{print $2}')";
+			$command="kill -9 $(ps aux | grep raspivid | grep -v grep | awk '{print $2}')";
 			echo shellCmd($command,true);
 			sleep(1);
 			$config->GetPids();
@@ -31,7 +31,7 @@ switch ($action)
 	case 'rtsp_start' :
 		$path=$config->xml->rtsp_path;
 		$ap=$config->xml->rtsp_pipe_active;
-		$command="sudo ".$path.$config->xml->$ap;
+		$command=$path.$config->xml->$ap;
 		shellCmd($command);
 		sleep(8);
 		$config->GetPids();
@@ -40,7 +40,7 @@ switch ($action)
 	case 'rtsp_stop' :
 		if($do)
 		{
-			$command="sudo kill -9 $(ps aux | grep test-launch | grep -v grep | awk '{print $2}')";
+			$command="kill -9 $(ps aux | grep test-launch | grep -v grep | awk '{print $2}')";
 			echo shellCmd($command,true);
 			sleep(1);
 			$config->GetPids();
