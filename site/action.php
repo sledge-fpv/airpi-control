@@ -40,7 +40,7 @@ switch ($action)
 	case 'rtsp_stop' :
 		if($do)
 		{
-			$command="sudo kill -9 $(ps aux | grep rtsp-server | grep -v grep | awk '{print $2}')";
+			$command="sudo kill -9 $(ps aux | grep test-launch | grep -v grep | awk '{print $2}')";
 			echo shellCmd($command,true);
 			sleep(1);
 			$config->GetPids();
