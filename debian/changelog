@@ -1,3 +1,9 @@
+airpi-control (0.2.0-9) jessie; urgency=medium
+
+  * sudo no longer needed for streaming operations 
+
+ -- hornetwl <hornetwlfpv@googlemail.com>  Mon, 01 Dec 2014 08:13:53 +0000
+
 airpi-control (0.2.0-8) jessie; urgency=medium
 
   * signed packages
