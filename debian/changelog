@@ -1,17 +1,25 @@
-airpi-control (0.2.0-4) UNRELEASED; urgency=medium
+airpi-control (0.2.0-9) jessie; urgency=medium
 
+  * sudo no longer needed for streaming operations 
+
+ -- hornetwl <hornetwlfpv@googlemail.com>  Mon, 01 Dec 2014 08:13:53 +0000
+
+airpi-control (0.2.0-8) jessie; urgency=medium
+
+  * signed packages
   * fixed nginx configuration to listen on all IPs and to replace the default site
+  * added licensing information
 
- -- Holger Steinhaus <hsteinhaus@gmx.de>  Tue, 18 Nov 2014 19:03:58 +0000
+ -- hornetwl <hornetwlfpv@googlemail.com>  Tue, 25 Nov 2014 20:23:27 +0000
 
 airpi-control (0.2.0-1) unstable; urgency=medium
 
   * Python modules installed during package installation 
 
- -- Holger Steinhaus <hsteinhaus@gmx.de>  Mon, 17 Nov 2014 20:25:11 +0000
+ -- hornetwl <hornetwlfpv@googlemail.com>  Mon, 17 Nov 2014 20:25:11 +0000
 
 airpi-control (0.2.0-0) unstable; urgency=medium
 
   * Initial release.
 
- -- Holger Steinhaus <hsteinhaus@gmx.de>  Mon, 17 Nov 2014 20:15:38 +0000
+ -- hornetwl <hornetwlfpv@googlemail.com>  Mon, 17 Nov 2014 20:15:38 +0000

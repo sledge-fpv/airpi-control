@@ -9,6 +9,6 @@ Standards-Version: 3.9.5
 
 Package: airpi-control
 Architecture: all
-Depends: nginx, php5-fpm, python-pip, netcat, gstreamer1.0-tools, gstreamer1.0-plugins-base, gstreamer1.0-plugins-good, gstreamer1.0-plugins-bad, gstreamer1.0-libav, gstreamer1.0-rtsp-server, gstreamer1.0-rpicamsrc, libraspberrypi-bin, raspi-copies-and-fills
+Depends: nginx, php5-fpm, python-pip, netcat, gstreamer1.0-tools, gstreamer1.0-plugins-base, gstreamer1.0-plugins-good, gstreamer1.0-plugins-bad, gstreamer1.0-libav, gstreamer1.0-rtsp-server, gstreamer1.0-rpicamsrc, libraspberrypi-bin, raspi-copies-and-fills,screen
 Description: Web application for AirPi control
 

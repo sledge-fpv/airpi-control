@@ -4,9 +4,9 @@
 <rtsp_state>0</rtsp_state>
 <rtsp_path>/usr/bin/</rtsp_path>
 <rtsp_pipe_active>rtsp_pipe_2</rtsp_pipe_active>
-<rtsp_pipe_1>test-launch "(rpicamsrc bitrate=6500000 hflip=true vflip=true preview=false ! video/x-h264,width=1280,height=720,framerate=49/1,profile=high ! h264parse ! rtph264pay name=pay0 pt=96 )"</rtsp_pipe_1>
-<rtsp_pipe_2>test-launch "(rpicamsrc bitrate=5500000 hflip=true vflip=true preview=false ! video/x-h264,width=1280,height=720,framerate=49/1,profile=high ! h264parse ! rtph264pay name=pay0 pt=96 )"</rtsp_pipe_2>
-<rtsp_pipe_3>test-launch "(rpicamsrc bitrate=4500000 hflip=true vflip=true preview=false ! video/x-h264,width=1280,height=720,framerate=49/1,profile=high ! h264parse ! rtph264pay name=pay0 pt=96 )"</rtsp_pipe_3>
+<rtsp_pipe_1>test-launch2 "(rpicamsrc bitrate=6500000 hflip=true vflip=true preview=false ! video/x-h264,width=1280,height=720,framerate=49/1,profile=high ! h264parse ! rtph264pay name=pay0 pt=96 )"</rtsp_pipe_1>
+<rtsp_pipe_2>test-launch2 "(rpicamsrc bitrate=5500000 hflip=true vflip=true preview=false ! video/x-h264,width=1280,height=720,framerate=49/1,profile=high ! h264parse ! rtph264pay name=pay0 pt=96 )"</rtsp_pipe_2>
+<rtsp_pipe_3>test-launch2 "(rpicamsrc bitrate=4500000 hflip=true vflip=true preview=false ! video/x-h264,width=1280,height=720,framerate=49/1,profile=high ! h264parse ! rtph264pay name=pay0 pt=96 )"</rtsp_pipe_3>
 <rtsp_pipe_4/>
 <rtsp_pipe_5/>
 

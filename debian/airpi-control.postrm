@@ -1,0 +1,5 @@
+#!/bin/sh
+set -e
+
+systemctl unmask serial-getty@ttyAMA0.service
+systemctl start serial-getty@ttyAMA0.service
